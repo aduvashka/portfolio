@@ -1,0 +1,591 @@
+		@font-face {
+		    font-family: 'RobotoB';
+		    src: url('./Roboto/Roboto-Bold.ttf')format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		@font-face {
+		    font-family: 'RobotoL';
+		    src: url('./Roboto/Roboto-Light.ttf')format('truetype');
+		    font-weight: normal;
+		    font-style: italic;
+		}
+
+		* {
+		    box-sizing: border-box;
+		    margin: 0;
+		    padding: 0;
+		}
+
+		ul {
+		    list-style-type: none;
+		}
+
+		a {
+		    color: black;
+		    text-decoration: none;
+		}
+
+		body {
+		    font-family: Arial, sans-serif;
+		}
+
+		.top_header::after,
+		.bottom_header::after,
+		ul::after,
+		.top_main::after,
+		.bottom_main::after,
+		footer::after {
+		    content: '';
+		    display: table;
+		    clear: both;
+		}
+
+		header,
+		footer {
+		    width: 100%;
+		    background-color: #0D201C;
+		}
+
+		/*Header*/
+		header {
+		    padding: 0 10% .7em;
+		}
+
+		.top_header {
+		    margin-bottom: 2em;
+		    display: flex;
+		}
+
+		.top_header .logo {
+		    width: 30%;
+		    float: left;
+		    margin: auto;
+		    margin-left: 0;
+		    background-image: radial-gradient(50% 50% at 50% 0, #01474F, #0D201C);
+		    padding-top: 1em;
+		}
+
+		.top_header .logo h1 {
+		    font-family: 'RobotoL', serif;
+		    font-size: 1.5em;
+		    color: white;
+		}
+
+		.top_header nav {
+		    float: right;
+		    width: 50%;
+		    margin: auto;
+		    margin-right: 0;
+		    padding-top: 1em;
+		}
+
+		.top_header nav li {
+		    float: right;
+		    width: 16.6%;
+		}
+
+		.top_header li a {
+		    display: block;
+		    font-size: .7em;
+		    color: #248286;
+		    text-align: center;
+		    padding: 1em;
+		}
+
+		.top_header li:hover a {
+		    background-image: linear-gradient(#1BB9C6 30%, #095265);
+		    color: #09d5dc;
+		}
+
+		.line_header {
+		    background-image: linear-gradient(to right, #0D201C 0%, #07686f 50%, #0D201C 100%);
+		    width: 100%;
+		    height: 2px;
+		}
+
+		.bottom_header {
+		    padding-top: 2em;
+		    background-image: radial-gradient(35% 25% at 50% 0, #024B51, #0D201C);
+		}
+
+		.bottom_header section {
+		    width: 30%;
+		    float: left;
+		    margin-left: 0;
+		}
+
+		.bottom_header section h2 {
+		    font-size: 2em;
+		    color: white;
+		    font-family: 'RobotoB';
+
+		}
+
+		.bottom_header section h3 {
+		    font-size: 2.5vw;
+		    font-family: 'RobotoL';
+		    color: white;
+		    margin-bottom: .5em;
+		}
+
+		.bottom_header section p {
+		    font-size: 1em;
+		    font-family: 'RobotoL';
+		    color: #207F79;
+		    line-height: 1.5em;
+		    text-align: justify;
+		}
+
+		.bottom_header figure {
+		    width: 65%;
+		    height: 18em;
+		    background-image: url(https://files.adme.ru/files/news/part_70/704610/preview-26276115-1200x630-99-1481879211.jpg);
+		    background-repeat: no-repeat;
+		    background-size: cover;
+		    background-position: bottom;
+		    float: right;
+		    margin-right: 0;
+		    position: relative;
+		}
+
+		.left {
+		    width: 7%;
+		    height: 20%;
+		    position: absolute;
+		    background: #000000a1;
+		    top: 50%;
+		    margin-top: -3.5%;
+		}
+
+		.right {
+		    width: 7%;
+		    height: 20%;
+		    position: absolute;
+		    background: #000000a1;
+		    top: 50%;
+		    right: 0;
+		    margin-top: -3.5%;
+		}
+
+		.left::after,
+		.right::after {
+		    content: '';
+		    top: 40%;
+		    border-top: .2vw solid white;
+		    position: absolute;
+		    width: 20px;
+		    height: 20px;
+		    margin-top: -7.5%;
+		}
+
+		.left::after {
+		    left: 50%;
+		    border-left: .2vw solid white;
+		    margin-left: -7.5%;
+		    transform: rotate(-45deg);
+		}
+
+		.right::after {
+		    right: 50%;
+		    margin-right: -7.5%;
+		    border-right: .2vw solid white;
+		    transform: rotate(45deg);
+		}
+
+		.bottom_header figcaption {
+		    width: 100%;
+		    font-size: 1.5em;
+		    position: absolute;
+		    bottom: 0;
+		    padding: 1em;
+		    color: white;
+		    background: #00000073;
+		}
+
+		/*Content*/
+		.content {
+		    width: 100%;
+		    padding: 2em 10% .7em;
+		    background-image: radial-gradient(45% 1% at 50% 0, #7E7E7E, rgba(34, 97, 50, 0)), linear-gradient(to bottom, #E5E5E5, #FAFAFA 14%);
+		}
+
+		.content nav {
+		    margin-bottom: 1em;
+		}
+
+		.content ul {
+		    width: 30%;
+		    margin: auto;
+		    margin-right: 20%;
+		}
+
+		.content li {
+		    width: 2vh;
+		    height: 2vh;
+		    border-radius: 50%;
+		    margin-right: 10%;
+		    float: right;
+		    background-color: rgb(195, 195, 195);
+		}
+
+		.content li:hover {
+		    box-shadow: inset 1px 2px 4px black;
+		}
+
+		.line_top_main {
+		    background-image: linear-gradient(to right, #ededed 0%, #DCDCDC 30%, #ededed 100%);
+		    width: 100%;
+		    height: 2px;
+		    margin-bottom: 2em;
+		}
+
+		.line_main {
+		    background-image: linear-gradient(to right, #FAFAFA 0%, #DCDCDC 30%, #FAFAFA 100%);
+		    width: 100%;
+		    height: 2px;
+		    margin-bottom: 2em;
+		}
+
+		main,
+		.top_main,
+		.bottom_main {
+		    margin-bottom: 2em;
+		}
+
+		.top_main section,
+		.bottom_main section {
+		    width: 32%;
+		    float: left;
+		    margin-right: 2%;
+		}
+
+		.top_main section:last-of-type,
+		.bottom_main section:last-of-type {
+		    margin-right: 0;
+		}
+
+		.icon {
+		    display: inline-block;
+		    width: 22px;
+		    height: 22px;
+		    margin: 0 5px;
+		    background: url('http://true-coder.ru/wp-content/uploads/2012/03/css-sprites.gif') no-repeat;
+		    box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+		    vertical-align: middle;
+		}
+
+		.top_main .icon_one {
+		    background-position: -130px -280px;
+		}
+
+		.top_main .icon_two {
+		    background-position: -308px -280px;
+		}
+
+		.top_main .icon_three {
+		    background-position: -369px -280px;
+		}
+
+		.top_main h4 {
+		    display: inline-block;
+		    font-size: 1.9em;
+		    font-family: 'RobotoL';
+		    color: #686868;
+		    vertical-align: middle;
+		}
+
+		.top_main p,
+		.bottom_main p {
+			 text-indent: 20px;
+		    font-size: 1em;
+		    color: #686868;
+		    font-family: 'RobotoL ';
+		    margin: 1em 0;
+		    text-align: justify;
+		}
+
+		.top_main a,
+		.bottom_main a {
+		    display: block;
+		    width: 10em;
+		    margin:auto;
+		    padding: .2em 0;
+		    border-radius: 20px;
+		    border: 2px solid #e0dede;
+		    text-align: center;
+		    font-size: 1em;
+		    color: #686868;
+		    font-family: 'RobotoL ';
+		    background: #FAFAFA;
+		}
+
+		.bottom_main figure {
+		    width: 100%;
+		    height: 10em;
+		    background-repeat: no-repeat;
+		    background-size: 100% 100%;
+		    background-position: center;
+		}
+
+		.bottom_main section:nth-of-type(1) figure {
+		    background-image: url(https://klike.net/uploads/posts/2019-01/1547365376_1.jpg);
+		}
+
+		.bottom_main section:nth-of-type(2) figure {
+		    background-image: url(https://sites.google.com/site/prirodanasevseegooglgfgf/_/rsrc/1463456237313/home/priroda_gory_nebo_ozero_oblaka_81150_1920x1080.jpg);
+		}
+
+		.bottom_main section:nth-of-type(3) figure {
+		    background-image: url(https://files.adme.ru/files/news/part_79/793310/preview-23557365-1200x630-99-1484579184.jpg);
+		}
+
+		.bottom_main h4 {
+		    background-image: radial-gradient(55% 8% at 50% 0, #8E8E8E, rgba(34, 97, 50, 0));
+		    font-size: 2em;
+		    font-family: 'RobotoL';
+		    color: #686868;
+		    padding-top: .5em;
+		}
+
+		address {
+		    width: 100%;
+		    display: flex;
+		    margin-bottom: 1em;
+		}
+
+		address .icon_address {
+		    background-position: -308px -129px;
+		    margin: auto;
+		    margin-left: 0;
+		    margin-right: 1%;
+		}
+
+		address p {
+		    font-size: 1.5em;
+		    color: #686868;
+		    font-family: 'RobotoL';
+		    margin: auto;
+		    margin-left: 0;
+		}
+
+		address p:nth-of-type(1) a {
+		    font-weight: bold;
+		    color: #686868;
+		}
+
+		address .clock {
+		    width: 13%;
+		    border: 2px solid #e0dede;
+		    text-align: center;
+
+		    background: #FAFAFA;
+		    font-weight: bold;
+		    margin: auto;
+		    margin-right: 0;
+
+		}
+
+		address .clock a {
+		    display: block;
+		    font-size: 1em;
+		    color: #686868;
+		    font-family: 'RobotoL';
+		    padding: 1em;
+		}
+
+		/*Footer*/
+		footer {
+		    display: flex;
+		    padding: 1.3em 10% .7em;
+		}
+
+		footer nav {
+		    margin: auto;
+		    margin-left: 0;
+		}
+
+		footer li {
+		    float: left;
+		    width: 16.6%;
+		}
+
+		footer a {
+		    display: block;
+		    font-size: 1em;
+		    color: #248286;
+		    text-align: center;
+		    padding: 1em;
+		}
+
+		footer p {
+		    font-size: 1em;
+		    margin: auto;
+		    margin-right: 0;
+		    color: #248286;
+		}
+
+		footer .icon_strelka {
+		    background-position: -489px -132px;
+		    position: fixed;
+		    right: 5%;
+		    bottom: 5%;
+		}
+
+		@media all and (max-width: 992px) {
+		    header {
+		        padding: 0;
+		    }
+
+		    .top_header {
+		        display: block;
+		        margin-bottom: .5em;
+		    }
+
+		    .top_header .logo {
+		        width: 50%;
+		        text-align: center;
+		        float: none;
+		        margin: auto;
+		    }
+
+		    .top_header nav {
+		        float: none;
+		        padding-top: .5em;
+		        width: 100%
+		    }
+
+		    .top_header li a {
+		        font-size: 1em;
+		    }
+
+		    .bottom_header {
+		        padding-top: 1em;
+		    }
+
+		    .bottom_header section {
+		        display: none;
+		    }
+
+		    .bottom_header figure {
+		        width: 100%;
+		    }
+
+		    .content {
+		        padding: 2em 1em;
+		    }
+
+		    .content li {
+		        width: 1em;
+		        height: 1em;
+		        margin-right: 5%;
+		    }
+
+		    .line_main {
+		        margin-bottom: 1em;
+		    }
+
+		    .content nav {
+		        margin-bottom: .5em;
+		    }
+
+		    .content li {
+		        width: 1em;
+		        height: 1em;
+		        margin-right: 5%;
+		    }
+
+		    .top_main section:not(:last-of-type),
+		    .bottom_main section:not(:last-of-type) {
+		        width: 48%;
+		    }
+
+		    .top_main section:last-of-type,
+		    .bottom_main section:last-of-type {
+		        width: 100%;
+		        margin-top: 1em;
+		    }
+
+
+		    address {
+		        display: block;
+		    }
+
+		    address p {
+		        font-size: 1em;
+		    }
+
+		    address .icon_address {
+		        float: left;
+		    }
+
+		    address .clock {
+		        width: 30%;
+		        margin: auto;
+		        text-align: center;
+		        margin-top: .5em;
+		    }
+
+		    footer {
+		        display: block;
+		        padding: .5em 0;
+		    }
+
+		    footer nav {
+		        width: 100%;
+
+		    }
+
+		    footer p {
+		        margin: auto;
+		        text-align: center;
+		    }
+
+		    footer .icon_strelka {
+		        bottom: 2%;
+		    }
+
+		}
+
+
+
+
+
+		@media all and (max-width: 600px) {
+
+		    .top_header li a {
+		        padding: .5em;
+		    }
+
+		    .bottom_header figcaption {
+		        padding: .5em;
+		    }
+
+		    .content .top_main section,
+		    main,
+		    .content .bottom_main section {
+		        width: 100%;
+		        float: none;
+		        margin-bottom: 1em;
+		    }
+
+		    .line_top_main,
+		    .line_main {
+		        margin-bottom: .5em;
+		    }
+
+		    .top_main section:last-of-type,
+		    .bottom_main section:last-of-type {
+		        margin: auto;
+		    }
+
+		    .top_main section {
+		        margin-bottom: 1em;
+		    }
+
+		    address .clock {
+		        width: 35%;
+		    }
+
+		}
